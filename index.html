@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/index.css">
+        <title>Challenge - Sprint 01</title>
+    </head>
+    <body>
+        <main>
+            <section class="row" id="logo">
+                <img width="31" height="48" src="img/logo.svg" alt="Logo da alura">
+            </section>
+            <section id="main">
+
+                <div class="row">
+                    <div class="col">
+                        <textarea id="input" placeholder="Digite seu texto aqui" maxlength="200"></textarea>
+                        <span class="row" id="aviso"><img src="img/info.svg" alt="Icone de aviso">Apenas letras minúsculas e sem acento.</span>
+                        <div class="row">
+                            <button class="col" id="btnCriptografar">Criptografar</button>
+                            <button class="col" id="btnDescriptografar">Descriptografar</button>
+                        </div>
+                    </div>
+                    
+                    <div class="col" id="output">
+                        <span id="empty"><img src="img/output.svg" alt="Nenhuma saída"><h1>Nenhuma mensagem encontrada</h1>Digite um texto que você deseja criptografar ou descriptografar.</span>
+                        <textarea id="outputTexto" readonly></textarea>
+                        <button id="btnCopiar">Copiar</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+    <script src="js/index.js"></script>
+</html>
