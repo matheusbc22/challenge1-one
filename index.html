@@ -14,22 +14,17 @@
                 <img width="31" height="48" src="img/logo.svg" alt="Logo da alura">
             </section>
             <section id="main">
-
-                <div class="row">
-                    <div class="col">
-                        <textarea id="input" placeholder="Digite seu texto aqui" maxlength="200"></textarea>
-                        <span class="row" id="aviso"><img src="img/info.svg" alt="Icone de aviso">Apenas letras minúsculas e sem acento.</span>
-                        <div class="row">
-                            <button class="col" id="btnCriptografar">Criptografar</button>
-                            <button class="col" id="btnDescriptografar">Descriptografar</button>
-                        </div>
-                    </div>
+                <div id="text-input">
+                    <textarea id="input" placeholder="Digite seu texto aqui" maxlength="200"></textarea>
+                    <span class="row" id="aviso"><img src="img/info.svg" alt="Icone de aviso">Apenas letras minúsculas e sem acento.</span>
+                    <button class="col" id="btnCriptografar">Criptografar</button>
+                    <button class="col" id="btnDescriptografar">Descriptografar</button>
+                </div>
                     
-                    <div class="col" id="output">
-                        <span id="empty"><img src="img/output.svg" alt="Nenhuma saída"><h1>Nenhuma mensagem encontrada</h1>Digite um texto que você deseja criptografar ou descriptografar.</span>
-                        <textarea id="outputTexto" readonly></textarea>
-                        <button id="btnCopiar">Copiar</button>
-                    </div>
+                <div id="text-output">
+                    <span id="empty"><img src="img/output.svg" alt="Nenhuma saída"><h1>Nenhuma mensagem encontrada</h1>Digite um texto que você deseja criptografar ou descriptografar.</span>
+                    <textarea id="outputTexto" readonly></textarea>
+                    <button id="btnCopiar">Copiar</button>
                 </div>
             </section>
         </main>
