@@ -30,7 +30,7 @@ function descriptografarTexto(){
 }
 //Verifica string
 function verificarString(string){
-    let pattern = /[a-z ]+/;
+    let pattern = /[a-z \n]+/;
 
     if (string.length > 0){
         for (let i = 0; i < string.length; i++){
